@@ -1,0 +1,336 @@
+html {
+  background-image:
+  url("https://img.freepik.com/premium-vector/abstract-blue-vector-background-with-stripes_322958-114.jpg");
+  font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+.fa-brands {
+  color: black;
+}
+
+
+p 
+{
+  font-size: 20px;
+}
+
+
+h1 {
+  font-size: 40px;
+  margin: center;
+
+}
+
+img {
+  width: 400px;
+  height: 500;
+}
+
+a:hover {
+  background-color: #fff76b;
+}
+
+.left {
+  float: left;
+  margin-right: 10px;
+}
+
+table 
+{
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th,td 
+{
+  width: 30%;
+  border: 1px solid black;
+  padding: 50px 50px;
+}
+td{
+  padding: 50px 50px
+}
+th 
+{
+  background-color: #e6e6e6;
+}
+
+.animationDisplay
+{
+  position: relative;
+}
+
+.image-carousel
+{
+  position:absolute;
+}
+
+.image-carousel .imgx1,.imgx2,.imgx3
+{
+  opacity:0;
+}
+
+.imgx1{
+  animation-name: slidingImages;
+  animation-duration: 16s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  height:50%;
+  width:40%;
+}
+
+.imgx2
+{
+  animation-name: slidingImages;
+  animation-duration: 16s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+  height:50%;
+  width:40%;
+}
+
+
+
+.imgx3
+{
+  animation-name: slidingImages;
+  animation-duration: 16s;
+  animation-delay: 9s;
+  animation-iteration-count: infinite;
+  height:50%;
+  width:40%;
+}
+
+@keyframes slidingImages
+{
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(-300px);
+    opacity: 0;
+  }
+}
+
+footer {
+  position:fixed;
+  left:0;
+  bottom:0;
+  width:100%;
+  background-color: #caf0fe;
+  color: black;
+  text-align: center;
+}
+
+
+div {
+  display: grid;
+  grid-gap:10%;
+ grid-template-columns: 1fr 1fr;
+
+}
+
+
+* {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+body > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+body > ul > li {
+  width: 49%;
+  font-size: 20px;
+  text-align: center;
+  background-color: lightblue;
+  padding: 10px 0;
+}
+
+ul li:nth-of-type(1) {
+  position: relative;
+}
+
+ul li:nth-of-type(2) {
+  position: relative;
+}
+
+
+
+.submenu {
+  position: absolute;
+  top: -9999px;
+}
+
+ul li:nth-of-type(n):hover .submenu {
+  top: 44px;
+}
+
+.submenu {
+  background-color: #a8cbd7;
+  width: 100%;
+}
+
+.submenu li {
+  padding: 5px 0;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.submenu li:hover {
+  background-color: #a8cbd7;
+  cursor: pointer;
+  width: 100%
+}
+
+
+/* #submitbutton:hover 
+{
+  background-color: #ffffff;
+  width:20%;
+  height: 20%;
+}
+ */
+
+
+
+
+
+
+
+body {
+  font-family: "Comic Neue", cursive;
+}
+
+/* bulletin board background */
+#container {
+  height: 95vh;
+  width: 95vw;
+  min-width: 1200px;
+  max-width: 1400px;
+  background-image: url("https://c1.wallpaperflare.com/preview/907/581/284/backdrop-background-blank-board.jpg");
+  background-size: cover;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: inset 0 0 6px 5px rgba(0, 0, 0, 0.45);
+}
+
+/* bulletin board title */
+h1 {
+  font-size: 56px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* 5 sticky notes styling and positioning */
+section {
+  width: 265px;
+  height: 210px;
+  padding: 10px;
+  text-align: center;
+  background-color: #f8fdb4;
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.35);
+  position: absolute;
+}
+
+section:first-of-type {
+  top: 115px;
+  left: 85px;
+  transform: rotate(-9deg);
+}
+
+section:nth-of-type(2) {
+  top: 130px;
+  right: 500px;
+  transform: rotate(-1deg);
+}
+
+section:nth-of-type(3) {
+  top: 130px;
+  right: 60px;
+  transform: rotate(7deg);
+}
+
+section:nth-of-type(4) {
+  bottom: 50px;
+  left: 320px;
+  transform: rotate(3deg);
+}
+
+section:last-of-type {
+  bottom: 40px;
+  right: 260px;
+  transform: rotate(-3deg);
+}
+
+/* image form */
+p {
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+input {
+  width: 90%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #3d3d3d;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  font-size: 14px;
+  border-radius: 7px;
+  border: 1px solid black;
+  background-color: white;
+  padding: 5px 14px;
+}
+
+/* image being displayed */
+img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.imageDisplay div {
+  display: none;
+}
+
+section:hover .imageDisplay div {
+  display: block;
+}
+
+/* clear button */
+#clear-btn {
+  font-size: 18px;
+  position: absolute;
+  top: 45px;
+  right: 30px;
+}
+
+#clear-btn:hover {
+  background-color: #f0f0f0;
+} ;

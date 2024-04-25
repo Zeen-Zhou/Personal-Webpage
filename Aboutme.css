@@ -1,0 +1,175 @@
+.fa-brands {
+  color: black;
+}
+
+.row > #headline {
+  height: 100px;
+  width: 1440px;
+}
+
+.bg_body {
+  background-color: white;
+  font-family: 'Times New Roman', Times New Roman;
+}
+
+.carousel-item>img {
+  width: 500px;
+  height: 625px;
+}
+
+.carousel-item {
+  position: relative;
+}
+
+#commentsblock 
+{
+  border-radius: 0px;
+}
+
+.carousel-control-prev {
+  right: auto;
+  left: 20px;
+}
+
+.carousel-control-next {
+  top: 10%;
+  left: 58%;
+  right: 20px;
+}
+
+p {
+  font-size: 20px;
+  color: #000000;
+}
+
+h1 {
+  font-size: 100px;
+  color: #000000;
+
+}
+
+
+a:hover {
+  background-color: #c0c0c0;
+}
+
+.left {
+  float: left;
+  margin-right: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th,
+td {
+  width: 30%;
+  border: 1px solid black;
+  padding: 50px 50px;
+}
+
+td {
+  padding: 50px 50px
+}
+
+th {
+  background-color: #000000;
+}
+
+w .animationDisplay {
+  position: absolute;
+}
+
+img {
+  width: 10%;
+}
+
+.imgx1 {
+  animation-name: slidingImages;
+  animation-duration: 16s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  height: 60%;
+  width: 50%;
+  bottom: 0;
+  right: 0;
+}
+
+.imgx2 {
+  animation-name: slidingImages;
+  animation-duration: 16s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+  height: 60%;
+  width: 50%;
+  bottom: 0;
+  right: 0;
+
+}
+
+.imgx3 {
+  animation-name: slidingImages;
+  animation-duration: 16s;
+  animation-delay: 9s;
+  animation-iteration-count: infinite;
+  height: 60%;
+  width: 50%;
+  bottom: 0;
+  right: 0;
+}
+
+@keyframes slidingImages {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  80% {
+    transform: translateX(-100px);
+  }
+
+  100% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+}
+
+footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #caf0fe;
+  color: black;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+body>ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+body>ul>li {
+  width: 49%;
+  font-size: 20px;
+  text-align: center;
+  background-color: #d4e3fe;
+  padding: 10px 0;
+}
