@@ -3,6 +3,11 @@
   font-family: 'Times New Roman', Times New Roman;
 } 
 
+#logo {
+  height: 100%;
+  width: 100%;
+}
+
 .carousel-item > img{
   width:450px;
   height:575px;
